@@ -6,8 +6,8 @@
     position: absolute;
     z-index: 10000;
     width: 100vw;
-    height: 100 vh;
     top: -105vh;
+    margin-top: -3vh;
     background:red;
     -webkit-transition: top 0.3s ease-in;
     -o-transition: top 0.3s ease-in;
@@ -34,7 +34,7 @@
     z-index: 999999;
     font-size: 1.4em;
     left: 95vw;
-    top: 2vh;
+    top: 5vh;
     display: inline;
 }
 
@@ -70,7 +70,57 @@
     color: black;
 }
 
-/* .menu-link a:hover  {
-    background-color: #DDD;
-    color:red; 
-} */
+/********************** IPAD & LARGER **********************/
+@media (min-width: 700px){
+    .menu-button {
+        display: none;
+    }
+
+    .close {
+        display: none;
+    }
+    
+    .nav {
+        position: absolute;
+        margin-top: 0;
+        z-index: 10000;
+        width: 100vw;
+        top: 0;
+        background:rgba(0,0,0,0);
+    }
+
+    .menu-items {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 40vw;
+        left: 55vw;
+    }
+
+    .menu-link {
+        text-decoration: none;
+        font-size: .85em;
+        color:#aaa;
+        background:rgba(0,0,0,0);
+        width: 100%;
+        padding:10px 0;
+        margin: 0 20px;
+        border-bottom:none;
+        text-align: center;
+    }
+
+    .menu-link:hover  {
+        background-color: rgba(0,0,0,0) ;
+        color:red; 
+    }
+
+    .menu-link-active {
+        text-decoration: none;
+        position: relative;
+        color:#c68274;
+        font-weight: 600;
+    }
+
+}
+
