@@ -1,12 +1,11 @@
 import React from 'react'
 
-function Home() {
+function Resume(){
     return(
         <div>
-            This is Home
+            This is Resume
         </div>
-
     )
-}  
+}
 
-export default Home
+export default Resume

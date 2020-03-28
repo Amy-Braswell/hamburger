@@ -1,0 +1,76 @@
+.nav-container {
+    position: relative; 
+}
+
+.nav {
+    position: absolute;
+    z-index: 10000;
+    width: 100vw;
+    height: 100 vh;
+    top: -105vh;
+    background:red;
+    -webkit-transition: top 0.3s ease-in;
+    -o-transition: top 0.3s ease-in;
+    transition: top 0.3s ease-in
+}
+
+.nav.show {
+    top: 0;
+}
+
+.menu-button {
+    position: relative;
+    cursor: pointer;
+    z-index: 9999;
+    font-size: 1.4em;
+    left: 95vw;
+    top: 2vh;
+    display: inline;
+}
+
+.close {
+    position: relative;
+    cursor: pointer;
+    z-index: 999999;
+    font-size: 1.4em;
+    left: 95vw;
+    top: 2vh;
+    display: inline;
+}
+
+.menu-items{
+    padding: 0;
+    margin: 0;
+}
+
+.menu-list {
+    list-style: none;
+}
+
+.menu-link {
+    text-decoration: none;
+    color:#EBEBD3;
+    background:red;
+    padding:1.5em 0;
+    border-bottom:1px solid #333;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+}
+
+.menu-link:hover  {
+    background-color: #dddddd ;
+    color:red ; 
+}
+
+.menu-link-active {
+    text-decoration: none;
+    position: relative;
+    color: black;
+}
+
+/* .menu-link a:hover  {
+    background-color: #DDD;
+    color:red; 
+} */
